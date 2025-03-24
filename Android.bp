@@ -6651,7 +6651,7 @@ cc_prebuilt_library_shared {
 	owner: "xiaomi",
 	strip: {
 		none: true,
-},
+	},
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdclient.so"],
@@ -6909,8 +6909,8 @@ cc_prebuilt_library_shared {
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libwfduibcsrcinterface.so"], shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfduibcsrc", "libwfdcommonutils", 
-			"libwfdconfigutils", "libc++", "libc", "libm", "libdl", ], : { srcs: ["proprietary/system_ext/lib64/libmmparser_lite.so"], shared_libs: [ ],
+			srcs: ["proprietary/system_ext/lib64/libwfduibcsrcinterface.so"],
+			shared_libs: ["libmmosal", "liblog", "libutils", "libcutils", "libwfduibcsrc", "libwfdcommonutils", "libwfdconfigutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7109,7 +7109,7 @@ android_app_import {
 dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
-	jars: ["proprietary/framework/WfdCommon.jar"],
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 dex_import {
